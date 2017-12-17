@@ -1,0 +1,8 @@
+---
+
+- hosts: all
+  become: true
+  
+  tasks:
+  
+  - copy: content="Hello you!" dest="/tmp/hello.txt"
